@@ -13,8 +13,9 @@ import {
 import { IonReactRouter } from "@ionic/react-router";
 import { homeOutline, listOutline, logInOutline } from "ionicons/icons";
 import Tab1 from "./pages/Tab1";
-import Tab2 from "./pages/Tab2";
+
 import Login from "./pages/auth/pages/Login";
+import ArticleList from "./pages/articles/pages/ArticleList";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -46,7 +47,7 @@ const App: React.FC = () => (
             <Tab1 />
           </Route>
           <Route exact path="/articulos">
-            <Tab2 />
+            <ArticleList />
           </Route>
           <Route exact path="/login">
             <Login />
